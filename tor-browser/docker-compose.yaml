@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  tor-browser:
+    build:
+      context: . tor-browser
+      args:
+        - http_proxy
+
+    image: jcorgan/tor-browser
+      
+    environment:
+      - DISPLAY=unix:0
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+    devices:
+      - /dev/snd
