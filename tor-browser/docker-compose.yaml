@@ -3,11 +3,6 @@ version: '2'
 services:
 
   tor-browser:
-    build:
-      context: . tor-browser
-      args:
-        - http_proxy
-
     image: jcorgan/tor-browser
       
     environment:
