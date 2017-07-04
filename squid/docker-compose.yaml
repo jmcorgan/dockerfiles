@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  squid3:
+     build: .
+     image: jcorgan/squid3
+     container_name: squid3
+
+     ports:
+        - "3128:3128/tcp"
+
+     volumes:
+        - /opt/squid/etc:/etc/squid:ro
+        - /opt/squid/cache:/var/cache/squid:rw
+        - /opt/squid/log:/var/log/squid:rw
