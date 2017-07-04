@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  bitcoind:
+    image: jcorgan/bitcoind-ppa
+    container_name: bitcoind
+
+    ports:
+      - 127.0.0.1:8333:8333
+
+    volumes:
+      - /opt/bitcoin:/.bitcoin
