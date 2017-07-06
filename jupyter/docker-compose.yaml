@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  jupyter:
+     image: jcorgan/jupyter
+     container_name: jupyter
+     network_mode: host
+
+     volumes:
+       - /opt/notebooks:/opt/notebooks
