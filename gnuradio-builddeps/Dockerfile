@@ -47,6 +47,7 @@ RUN apt-get update -q \
        python-zmq \
        swig \
        uhd-host \
+       wxgtk3.0-dev \
        libqt4-dev \
        libqwt5-qt4 \
        libqwt-dev \
