@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 LABEL maintainer="Johnathan Corgan <johnathan@corganlabs.com>"
 
 # Tor project parameters
-ENV TOR_VERSION=7.0.9
+ENV TOR_VERSION=7.0.10
 ENV TOR_RELEASE_FILE=tor-browser-linux64-${TOR_VERSION}_en-US.tar.xz
 ENV TOR_RELEASE_URL=https://dist.torproject.org/torbrowser/${TOR_VERSION}/${TOR_RELEASE_FILE}
 ENV TOR_RELEASE_KEY=0x4E2C6E8793298290
