@@ -2,7 +2,7 @@ SocksPort 0.0.0.0:9050 IsolateDestAddr IsolateDestPort
 
 # Provide control port locally
 ControlPort 9051
-ControlListenAddress 127.0.0.1
+ControlListenAddress 0.0.0.0:9051
 DisableDebuggerAttachment 0
 
 # Torified DNS
