@@ -7,6 +7,9 @@ RUN pip3 install --proxy=$http_proxy \
     bokeh \
     ggplot \
     h5py \
+    jupyter \
+    jupyterhub \
+    jupyterlab \
     leveldb \
     lmdb \
     matplotlib \
