@@ -20,8 +20,9 @@ RUN pip3 install --upgrade pip \
 
 # Install needed binary packages from Ubuntu
 RUN DEBIAN_FRONTEND=noninteractive \
-    apt-get install -qy \
-       libcudnn7-dev \
+    apt-get install -qy --allow-downgrades \
+       libcudnn7=7.0.5.15-1+cuda9.1 \
+       libcudnn7-dev=7.0.5.15-1+cuda9.1 \
        --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
