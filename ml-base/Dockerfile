@@ -16,6 +16,7 @@ RUN pip3 install --proxy=$http_proxy \
     ggplot \
     graphviz \
     h5py \
+    hyperopt \
     jupyter \
     jupyterhub \
     jupyterlab \
