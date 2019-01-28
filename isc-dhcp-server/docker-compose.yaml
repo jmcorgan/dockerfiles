@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  dhcpd:
+     build: .
+     image: jcorgan/isc-dhcp-server
+     container_name: dhcpd
+
+     environment:
+        - DHCPD_IFACE=enp3s0
+
+     volumes:
+        - /opt/dhcpd/:/data
+
+     network_mode: "host" 
