@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 label maintainer="Johnathan Corgan <johnathan@corganlabs.com"
 
 # Need this for add-apt-repository
@@ -12,7 +12,6 @@ RUN DEBIAN_FRONTEND=noninteractive \
     add-apt-repository ppa:bitcoin/bitcoin \
     && apt-get update -q && apt-get install -y \
          bitcoind \
-         db4.8 \
          --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
