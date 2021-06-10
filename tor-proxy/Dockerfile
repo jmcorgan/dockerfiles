@@ -21,7 +21,7 @@ RUN echo "deb http://deb.torproject.org/torproject.org focal main" \
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy \
        tor \
-       tor-arm \
+       nyx \
        --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
